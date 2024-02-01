@@ -1,0 +1,50 @@
+@layer components {
+
+    .tw-table {
+        @apply tw-table-fixed;
+        @apply tw-w-full;
+    }
+
+    .tw-table th, .tw-table td {
+        @apply tw-px-5 tw-py-3;
+    }
+    .tw-table td img {
+        @apply tw-max-w-none;
+    }
+
+    .tw-table tbody tr:nth-child(even) {
+      @apply tw-bg-gray-1;
+    }
+    .tw-table tbody tr:nth-child(odd) {
+      @apply tw-bg-gray-2;
+    }
+
+    .tw-table tbody tr:first-child td:first-child {
+        border-top-left-radius: 10px;
+    }
+
+    .tw-table tbody tr:first-child td:last-child {
+        border-top-right-radius: 10px
+    }
+
+    .tw-table tbody tr:last-child td:first-child  {
+        border-bottom-left-radius: 10px;
+    }
+
+    .tw-table tbody tr:last-child td:last-child  {
+        border-bottom-right-radius: 10px;
+    }
+
+    .tw-table tbody td {
+        @apply tw-text-xs tw-font-normal;
+    }
+
+    .tw-table thead th {
+        @apply tw-text-sm tw-font-normal;
+        @apply tw-py-4;
+    }
+
+    .tw-table-responsive {
+      @apply tw-block tw-w-full tw-overflow-auto;
+    }
+}

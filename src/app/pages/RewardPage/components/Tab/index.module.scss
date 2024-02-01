@@ -1,0 +1,23 @@
+.tab-button {
+  @apply tw-flex tw-flex-col tw-items-center tw-justify-center tw-w-full tw-h-20 tw-bg-gray-2.5 tw-bg-opacity-50;
+
+  padding: 5px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  &:not(:disabled):hover {
+    @apply tw-text-white;
+  }
+
+  &:disabled {
+    @apply tw-opacity-50;
+    cursor: not-allowed;
+  }
+}
+
+.tab-button--active {
+  @apply tw-bg-gray-2.5;
+  &:hover {
+    @apply tw-text-white;
+  }
+}

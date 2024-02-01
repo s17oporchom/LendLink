@@ -1,0 +1,8 @@
+.container {
+  max-width: 25rem;
+  @apply tw-flex tw-flex-1 tw-flex-col tw-justify-center tw-items-center tw-w-full;
+}
+
+.page {
+  margin-top: -4.4rem;
+}

@@ -1,0 +1,12 @@
+@import '_custom-variables.scss';
+
+@import '@blueprintjs/core/lib/css/blueprint';
+@import '@blueprintjs/core/src/blueprint';
+@import '@blueprintjs/select/lib/css/blueprint-select.css';
+
+@import 'blueprint-override.scss';
+
+@import 'new-design';
+
+@import 'global.scss';
+@import 'toasts.scss';

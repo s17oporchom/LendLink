@@ -1,0 +1,6 @@
+.symbol {
+  @apply tw-font-medium;
+  em {
+    @apply tw-opacity-50 tw-text-tiny tw-not-italic;
+  }
+}

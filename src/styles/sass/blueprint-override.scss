@@ -1,0 +1,125 @@
+// fix for blueprint overlay covering scrollbar - https://github.com/palantir/blueprint/issues/1008
+.bp3-overlay-backdrop {
+  display: none;
+  background: rgba(72, 72, 72, 0.92);
+}
+
+.bp3-overlay-open {
+  background-color: rgba(16, 22, 26, 0.7);
+}
+
+article.bp3-dialog h1 {
+  @apply tw-text-sov-white;
+}
+
+.bp3-tooltip2 {
+  -webkit-box-shadow: 0 0 0 1px rgba(16, 22, 26, 10%),
+    0 2px 4px rgba(16, 22, 26, 20%), 0 8px 24px rgba(16, 22, 26, 20%);
+  box-shadow: 0 0 0 1px rgba(16, 22, 26, 10%), 0 2px 4px rgba(16, 22, 26, 20%),
+    0 8px 24px rgba(16, 22, 26, 20%);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.bp3-tooltip2 .bp3-popover2-content {
+  @apply tw-relative
+    tw-px-3 tw-py-2.5
+    tw-rounded;
+}
+.bp3-tooltip2 .bp3-popover2-content {
+  @apply tw-text-sov-white tw-bg-black;
+}
+.bp3-toast.bp3-intent-success {
+  @apply tw-bg-trade-long;
+}
+.bp3-overlay-content,
+.bp3-overlay-content:focus {
+  outline: none;
+}
+
+.tw-block span.bp3-popover-target {
+  display: block;
+}
+
+.bp3-dialog {
+  @extend .sovryn-border;
+  @apply tw-p-3
+    tw-bg-gray-1
+    tw-font-body;
+}
+
+.bp3-popover {
+  &.bp3-select-popover {
+    & .bp3-popover-content {
+      @extend .sovryn-border;
+      @apply tw-bg-gray-1;
+
+      & .bp3-input-group {
+        & input {
+          @apply tw-bg-transparent tw-border tw-border-sov-white
+            tw-text-white;
+        }
+      }
+    }
+
+    & .bp3-popover-arrow-fill {
+      fill: theme('colors.white');
+    }
+  }
+
+  &,
+  &.bp3-tooltip {
+    & .bp3-popover-content {
+      @extend .sovryn-border;
+      @apply tw-bg-gray-1;
+    }
+
+    & .bp3-popover-arrow {
+      width: 30px;
+      height: 30px;
+    }
+
+    & .bp3-popover-arrow-fill {
+      fill: theme('colors.white');
+    }
+  }
+
+  & .bp3-menu {
+    @apply tw-bg-transparent;
+    background-color: transparent;
+
+    & .bp3-menu-item {
+      @apply tw-text-white tw-font-body;
+
+      &.bp3-active {
+        @apply tw-bg-gray-6;
+      }
+    }
+  }
+}
+
+.bp3-toast {
+  @extend .sovryn-border;
+  @apply tw-bg-gray-1;
+}
+
+.bp3-drawer {
+  @apply tw-w-full md:tw-w-80
+    tw-text-white
+    tw-bg-gray-1 tw-border-white tw-rounded-r-lg;
+
+  border-right: 5px solid;
+}
+
+.bp3-control {
+  & input:checked {
+    & ~ .bp3-control-indicator {
+      @apply tw-bg-primary;
+    }
+  }
+
+  &:hover input:checked {
+    & ~ .bp3-control-indicator {
+      @apply tw-bg-primary;
+    }
+  }
+}

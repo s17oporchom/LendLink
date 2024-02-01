@@ -1,0 +1,42 @@
+@layer components {
+  .tw-qrcode-container {
+    @apply tw-w-min;
+    @apply tw-mx-auto;
+    @apply tw-relative;
+    margin-bottom: 72px;
+  }
+  .tw-qrcode-label {
+    @apply tw-mb-2.5;
+    @apply tw-font-medium tw-text-base tw-text-sov-white;
+  }
+  .tw-qrcode-wrapper {
+    @apply tw-h-full 
+      tw-bg-sov-white tw-rounded-xl
+      tw-text-center;
+  }
+  .tw-qrcode-wrapper svg {
+    @apply tw-h-full tw-py-6 tw-mx-20 tw-mt-0 tw-mb-6
+      tw-rounded-xl;
+  }
+  .tw-qrcode-wrapper path:first-child {
+    @apply tw-fill-current tw-text-sov-white;
+  }
+  .tw-qrcode-wrapper path:nth-child(2) {
+    @apply tw-fill-current tw-text-black;
+  }
+
+  .tw-qrcode-clipboard {
+    @apply tw-absolute tw-w-full;
+  }
+  .tw-qrcode-clipboard .tw-qrcode-address-wrapper {
+    @apply tw-cursor-pointer;
+    @apply tw-py-3 tw-px-5;
+    @apply tw-rounded-lg;
+    @apply tw-border tw-border-gray-6 tw-border-solid;
+    @apply tw-bg-gray-1;
+    @apply tw-text-sm tw-font-light;
+  }
+  .tw-qrcode-clipboard .tw-qrcode-address-wrapper svg path:nth-child(2) {
+    @apply tw-fill-current tw-text-secondary;
+  }
+}

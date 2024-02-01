@@ -1,0 +1,20 @@
+query getSwapHistory($user: String) {
+  swaps(
+    where: { user: $user, isLimit: false }
+    orderBy: timestamp
+    orderDirection: desc
+  ) {
+    fromToken {
+      id
+    }
+    toToken {
+      id
+    }
+    transaction {
+      id
+      timestamp
+    }
+    fromAmount
+    toAmount
+  }
+}

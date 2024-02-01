@@ -1,0 +1,70 @@
+.lightMode {
+  .engage-wallet {
+    @apply tw-h-8 tw-py-0.5 tw-pr-0 tw-pl-2.5 
+      tw-text-black tw-bg-gray-9;
+
+    .addressImage {
+      @apply tw-pl-3;
+
+      > img {
+        @apply tw-h-5;
+      }
+    }
+
+    .logout {
+      @apply tw-h-8 tw-p-2
+        tw-bg-gray-7 hover:tw-bg-gray-6;
+    }
+  }
+}
+
+.engage-wallet {
+  @apply tw-justify-center tw-items-center tw-hidden xl:tw-flex
+    tw-w-auto tw-h-10 tw-py-0.5 tw-pr-0 tw-pl-2.5
+    tw-text-sm tw-font-extralight tw-font-body tw-tracking-normal
+    tw-bg-gray-4 tw-rounded-lg
+    tw-cursor-pointer;
+
+  min-width: 165px;
+
+  .addressImage {
+    @apply tw-pl-1 tw-pr-2;
+  }
+
+  .caretIndicator {
+    @apply tw-px-2;
+  }
+
+  .logout {
+    @apply tw-h-10 tw-p-3 
+      tw-text-primary 
+      tw-bg-gray-6 tw-rounded-l-none tw-rounded-r-lg
+      tw-cursor-pointer;
+
+    transition: background-color 0.3s;
+    margin-left: 0.7rem;
+
+    &:hover {
+      @apply tw-bg-black tw-bg-opacity-25;
+    }
+  }
+}
+
+// blueprintjs override
+:global(.bp3-popover).wallet-connector-popover :global(.bp3-popover-content) {
+  @apply tw-bg-gray-2.5 tw-border-0 tw-p-1 tw-overflow-hidden tw-rounded;
+
+  min-width: 14rem;
+
+  & li {
+    @apply hover:tw-bg-gray-5 tw-opacity-70 hover:tw-opacity-100 tw-rounded tw-leading-none;
+
+    & + li {
+      @apply tw-mt-2;
+    }
+  }
+
+  & :global(.bp3-menu) {
+    @apply tw-p-0;
+  }
+}

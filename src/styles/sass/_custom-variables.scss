@@ -1,0 +1,17 @@
+:root {
+  --primary: theme('colors.primary');
+  --primary-10: theme('colors.primary-10');
+  --primary-25: theme('colors.primary-25');
+  --primary-50: theme('colors.primary-50');
+  --white: theme('colors.white');
+  --sov-white: theme('colors.sov-white');
+  --gray-1: theme('colors.gray-1');
+  --gray-3: theme('colors.gray-3');
+  --warning: theme('colors.warning');
+
+  // react-toastify overrides
+  --toastify-color-progress-success: theme('colors.success') !important;
+  --toastify-color-progress-error: theme('colors.warning') !important;
+  --toastify-toast-min-height: 4.5rem !important;
+  --toastify-color-light: theme('colors.sov-white') !important;
+}
